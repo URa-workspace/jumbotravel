@@ -1,0 +1,96 @@
+/* ---------- REVIEWS SECTION ---------- */
+#reviews {
+    background: linear-gradient(0deg, var(--brown) 0%, var(--gold));
+    box-shadow: 0 -20px 20px -15px #ff6600;
+}
+
+/* Reviews Slider Container */
+.reviews-slider {
+    padding: 20px 0 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.review-swiper {
+    width: 100%;
+    padding: 20px 10px 50px;
+}
+
+/* Review Card */
+.review-card-slide {
+    background: white;
+    border-radius: 24px;
+    padding: 30px 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.review-card-slide:hover {
+    transform: translateY(-5px);
+}
+
+.review-card-slide i {
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.review-card-slide p {
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.review-name {
+    font-weight: 700;
+    color: var(--brown);
+    margin-top: 10px;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--gold) !important;
+    opacity: 1;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    transform: translate(-50%, 100%);
+}
+
+/* Responsive Reviews */
+@media (max-width: 768px) {
+    .review-card-slide {
+        padding: 25px 15px;
+    }
+    
+    .review-card-slide i {
+        font-size: 2rem;
+    }
+    
+    .review-card-slide p {
+        font-size: 0.85rem;
+    }
+    
+    .review-swiper {
+        padding: 10px 5px 30px;
+    }
+    
+    .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+        transform: translate(-50%, 50%);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .review-card-slide {
+        padding: 25px 18px;
+    }
+}

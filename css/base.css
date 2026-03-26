@@ -1,0 +1,158 @@
+/* ---------- RESET & BASE ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background: linear-gradient(0deg, #9e1800 -100%, #fff4b7 100%);
+}
+
+/* ---------- COLOR VARIABLES ---------- */
+:root {
+    --brown: #4A322E;
+    --gold: #ffcb71;
+    --yellow: #fdf078;
+    --red: #F72B10;
+    --dark: #1e1e1e;
+    --light: #faf7f2;
+    --gray: #6c6c6c;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* ---------- UTILITY CLASSES ---------- */
+.text-shadow {
+    text-shadow: 1px 1px 2px #000;
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-brown {
+    color: var(--brown);
+}
+
+/* ---------- SECTION BASE ---------- */
+section {
+    padding: 60px 0;
+    width: 100%;
+}
+
+@media (min-width: 1025px) {
+    section {
+        padding: 100px 0;
+    }
+}
+
+/* ---------- SECTION TITLES ---------- */
+.section-title {
+    font-family: "Tenor Sans", sans-serif;
+    font-size: clamp(1.6rem, 11vw, 2.5rem);
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 60px;
+    color: var(--gold);
+    text-shadow: 1px 1px 2px #000;
+    padding: 0 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--gray);
+    margin: 0 auto 100px;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 0 15px;
+}
+
+.block-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 100;
+    color: var(--gold);
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+}
+
+@media (min-width: 375px) {
+    .section-title {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+    }
+}
+
+@media (min-width: 1025px) {
+    .section-title {
+        margin-bottom: 100px;
+    }
+}
+
+/* ---------- BUTTONS ---------- */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--gold);
+    color: var(--brown);
+    padding: 14px 28px;
+    border-radius: 60px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background: #e69100;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 60px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.btn-outline:hover {
+    background: var(--brown);
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-2px);
+}

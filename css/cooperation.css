@@ -1,0 +1,131 @@
+/* ---------- COOPERATION SECTION ---------- */
+#cooperation {
+    background: var(--brown);
+    position: relative;
+    z-index: 1;
+}
+
+#cooperation::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    background: url(./../img/partners_2.png) no-repeat center center/cover;
+    opacity: 0.05;
+    z-index: 1;
+}
+
+#cooperation .section-title {
+    margin-bottom: 30px;
+}
+
+/* Highlight Block (две колонки) */
+.coop-highlight {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    gap: 50px;
+    align-items: center;
+    margin: 20px 0 70px;
+    position: relative;
+    z-index: 3;
+}
+
+/* Левая колонка с текстом */
+.coop-highlight-text p {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-weight: 200;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    text-align: left;
+    hyphens: auto;
+}
+
+.coop-highlight-text p.result {
+    font-style: italic;
+    color: var(--gold);
+    padding-bottom: .75rem;
+    border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 769px) {
+    .coop-highlight-text p  {
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        hyphens: none;
+    }
+}
+@media (min-width: 1025px) {
+    .coop-highlight-text p  {
+        font-size: clamp(1.2rem, 2vw, 1.4rem);
+    }
+}
+
+/* Кнопка внутри блока */
+button#openCoopPopup {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #27df16;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+/* Правая колонка с изображением */
+.coop-highlight-image img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.coop-highlight-image img:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Cooperation */
+@media (max-width: 992px) {
+    .coop-highlight {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .coop-highlight-text {
+        text-align: left;
+    }
+    
+    .coop-highlight-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .coop-highlight {
+        gap: 30px;
+        margin: 20px 0 30px;
+    }
+    
+    .coop-highlight-text p {
+        text-align: left;
+    }
+    
+    button#openCoopPopup {
+        font-size: 1.1rem;
+        padding: 12px 20px;
+    }
+    
+    .coop-highlight-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    button#openCoopPopup {
+        font-size: 1rem;
+    }
+}

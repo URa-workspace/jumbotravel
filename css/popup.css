@@ -1,0 +1,165 @@
+/* ---------- POPUP OVERLAY ---------- */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+.popup-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Popup Content */
+.popup-content {
+    background: white;
+    max-width: 500px;
+    width: 90%;
+    padding: 30px 25px;
+    border-radius: 28px;
+    position: relative;
+    margin: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.popup-overlay.active .popup-content {
+    transform: scale(1);
+}
+
+/* Close Button */
+.close-popup {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--gray);
+    transition: all 0.3s ease;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.close-popup:hover {
+    color: var(--red);
+    background: rgba(0, 0, 0, 0.05);
+    transform: rotate(90deg);
+}
+
+/* Popup Title */
+.popup-content h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--brown);
+    margin-bottom: 25px;
+    text-align: center;
+    padding-right: 25px;
+}
+
+/* Popup Form */
+.popup-content .form-group {
+    margin-bottom: 18px;
+}
+
+.popup-content .form-group input,
+.popup-content .form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #e2e2e2;
+    border-radius: 60px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.popup-content .form-group input:focus,
+.popup-content .form-group textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(255, 203, 113, 0.2);
+}
+
+.popup-content .form-group textarea {
+    border-radius: 24px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.popup-content .btn-primary {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Responsive Popup */
+@media (min-width: 768px) {
+    .popup-content {
+        padding: 40px;
+        max-width: 550px;
+    }
+    
+    .popup-content h3 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .popup-content {
+        padding: 25px 20px;
+        width: 95%;
+    }
+    
+    .popup-content h3 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    
+    .close-popup {
+        top: 12px;
+        right: 15px;
+        font-size: 1.5rem;
+    }
+    
+    .popup-content .form-group input,
+    .popup-content .form-group textarea {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-content {
+        padding: 20px 15px;
+    }
+    
+    .popup-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .popup-content .form-group {
+        margin-bottom: 12px;
+    }
+    
+    .popup-content .form-group input,
+    .popup-content .form-group textarea {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+}
