@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Jumbo Travel | Путешествия по всему миру</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bellota+Text:300,300italic,regular,italic,700,700italic"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Tenor+Sans:regular" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Component Styles -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/directions.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/partners.css">
+    <link rel="stylesheet" href="css/cooperation.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-text">JUMBO <span>TRAVEL</span></div>
+            </div>
+            <div class="header-contacts">
+                <a href="tel:+78001234567" class="header-phone"><i class="fas fa-phone-alt"></i> +7 (800) 123-45-67</a>
+                <a href="#" class="telegram-link" id="mainTelegramBtn"><i class="fab fa-telegram"></i> Telegram</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content ">
+                <img src="./img/logo.png" alt="logo" class="hero-logo">
+                <h1 class="hero-title">Отдых без забот: <br>подбор туров любой сложности</h1>
+                <p class="hero-subtitle">Туры на любой бюджет, любые направления, индивидуальный подход и сервис 24/7</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary" id="heroTelegramBtn"><i class="fab fa-telegram"></i>
+                        Telegram-канал</a>
+                    <a href="#questionForm" class="btn-outline question-btn"><i class="fas fa-comment"></i> Задать вопрос</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title ">О нас</h2>
+            <div class="about-grid">
+                <div class="about-text ">
+                    <p><span class="name-agency">Jumbo&nbsp;<span>Travel</span></span> — команда профессионалов с
+                        многолетним опытом. Мы работаем по всему миру, наши клиенты находятся в разных странах.
+                        Организуем путешествия для всех: семьи с детьми, молодёжь, возрастные пары, компании и любителей
+                        уединения.</p>
+                    <p>Создаём не просто поездки, а комфортные условия для долгосрочного сотрудничества. 75–80% туристов
+                        обращаются к нам повторно. Благодаря партнёрству с ведущими туроператорами решаем 99.9% вопросов
+                        в пользу клиента.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Служба поддержки</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>99.9%</h3>
+                            <p>Вопросов решаем</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>80%</h3>
+                            <p>Повторных клиентов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image ">
+                    <img src="./img/office.png" alt="Наша команда">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title ">Наши услуги</h2>
+            <div class="services-grid">
+    
+                <!-- 1. Пакетные туры -->
+                <div class="service-card ">
+                    <div class="service-card-front">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <h3>Пакетные туры</h3>
+                        <p>Горящие и классические туры</p>
+                    </div>
+                    <div class="service-card-back">
+                        <p>Готовые решения для отдыха: от эконом до люкс. Подберём тур под ваш бюджет и пожелания.</p>
+                        <a href="#" class="service-detail-link" data-service="packet-tours">Подробнее →</a>
+                    </div>
+                </div>
+    
+                <!-- 2. Индивидуальные маршруты -->
+                <div class="service-card ">
+                    <div class="service-card-front">
+                        <i class="fas fa-route"></i>
+                        <h3>Индивидуальные маршруты</h3>
+                        <p>Персональные путешествия</p>
+                    </div>
+                    <div class="service-card-back">
+                        <p>Создаём уникальные маршруты под ваш запрос: любые направления, даты и предпочтения.</p>
+                        <a href="#" class="service-detail-link" data-service="custom-routes">Подробнее →</a>
+                    </div>
+                </div>
+    
+                <!-- 3. Групповые туры и ретриты -->
+                <div class="service-card ">
+                    <div class="service-card-front">
+                        <i class="fas fa-users"></i>
+                        <h3>Групповые туры и ретриты</h3>
+                        <p>Йога-туры, выезды с коллективами</p>
+                    </div>
+                    <div class="service-card-back">
+                        <p>Организуем выездные программы для групп: ретриты, корпоративы, йога-туры с полным сопровождением.
+                        </p>
+                        <a href="#" class="service-detail-link" data-service="group-tours">Подробнее →</a>
+                    </div>
+                </div>
+    
+                <!-- 4. Бронирование билетов -->
+                <div class="service-card ">
+                    <div class="service-card-front">
+                        <i class="fas fa-ticket"></i>
+                        <h3>Бронирование билетов</h3>
+                        <p>Авиа, ЖД, трансфер</p>
+                    </div>
+                    <div class="service-card-back">
+                        <p>Найдём лучшие цены на авиа и ЖД билеты, организуем трансфер из аэропорта до отеля.</p>
+                        <a href="#" class="service-detail-link" data-service="tickets">Подробнее →</a>
+                    </div>
+                </div>
+    
+                <!-- 5. Билеты на события -->
+                <div class="service-card ">
+                    <div class="service-card-front">
+                        <i class="fas fa-music"></i>
+                        <h3>Билеты на события</h3>
+                        <p>Концерты, театры, мероприятия</p>
+                    </div>
+                    <div class="service-card-back">
+                        <p>Доступ к лучшим мероприятиям мира: концерты, театры, спортивные события и фестивали.</p>
+                        <a href="https://t.me/jumbo_travel_agency/992" class="service-detail-link" data-service="events">Подробнее →</a>
+                    </div>
+                </div>
+    
+                <!-- 6. Круизы -->
+                <div class="service-card ">
+                    <div class="service-card-front">
+                        <i class="fas fa-ship"></i>
+                        <h3>Круизы</h3>
+                        <p>По России и зарубежью</p>
+                    </div>
+                    <div class="service-card-back">
+                        <p>Морские и речные круизы по России и миру. Полный спектр услуг на борту и в портах.</p>
+                        <a href="#" class="service-detail-link" data-service="cruises">Подробнее →</a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section class="directions">
+        <div class="container">
+            <h2 class="section-title ">Направления и география</h2>
+            <p class="section-subtitle ">Работаем по всему миру. Клиенты из разных стран, путешествия без границ
+            </p>
+            <div class="directions-grid">
+                <a href="https://t.me/jumbo_travel_agency/1047" target="_blank" class="dir-card "><img
+                        src="https://avatars.mds.yandex.net/i?id=ac3e4fa0004c999237b9cfeb9f468115_l-10642623-images-thumbs&n=13"
+                        alt="Турция">
+                    <div class="dir-overlay">
+                        <h3>Турция</h3>
+                    </div>
+                </a>
+                <a href="https://t.me/jumbo_travel_agency/1055" target="_blank" class="dir-card "><img
+                        src="https://i.pinimg.com/736x/23/17/52/231752df2ebd7b72597f7a12318a6510.jpg" alt="Египет">
+                    <div class="dir-overlay">
+                        <h3>Египет</h3>
+                    </div>
+                </a>
+                <a href="https://t.me/jumbo_travel_agency/1060" target="_blank" class="dir-card "><img
+                        src="https://avatars.mds.yandex.net/i?id=61b591659237c4a0deb84855ac86f00ba9e089bf-13054092-images-thumbs&n=13"
+                        alt="Россия">
+                    <div class="dir-overlay">
+                        <h3>Россия</h3>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="dir-card "><img
+                        src="./img/tailand.jpg"
+                        alt="Таиланд">
+                    <div class="dir-overlay">
+                        <h3>Таиланд</h3>
+                    </div>
+                </a>
+                <a href="https://t.me/jumbo_travel_agency/1038" target="_blank" class="dir-card "><img
+                        src="./img/vjetnam.png" alt="Вьетнам">
+                    <div class="dir-overlay">
+                        <h3>Вьетнам</h3>
+                    </div>
+                </a>
+                <a href="https://t.me/jumbo_travel_agency/1050" target="_blank" class="dir-card "><img
+                        src="./img/kitaj.png"
+                        alt="Китай">
+                    <div class="dir-overlay">
+                        <h3>Китай</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <h2 class="section-title ">Нас рекомендуют</h2>
+            <div class="reviews-slider swiper review-swiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-card-slide"><i class="fas fa-quote-left"></i>
+                            <p>“Обратились по рекомендации — не пожалели! Организовали тур в Мексику на высшем уровне.
+                                Спасибо за заботу!”</p>
+                            <div class="review-name">Анна К.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card-slide"><i class="fas fa-quote-left"></i>
+                            <p>“Jumbo Travel — это надежность. Были в Турции с детьми, всё продумано до мелочей.
+                                Обязательно вернёмся!”</p>
+                            <div class="review-name">Сергей и Ольга</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card-slide"><i class="fas fa-quote-left"></i>
+                            <p>“Индивидуальный маршрут по Китаю — мечта сбылась! Поддержка 24/7, все вопросы решались
+                                моментально.”</p>
+                            <div class="review-name">Екатерина П.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card-slide"><i class="fas fa-quote-left"></i>
+                            <p>“Обратились по рекомендации — не пожалели! Организовали тур в Мексику на высшем уровне.
+                                Спасибо за заботу!”</p>
+                            <div class="review-name">Анна К.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card-slide"><i class="fas fa-quote-left"></i>
+                            <p>“Jumbo Travel — это надежность. Были в Турции с детьми, всё продумано до мелочей.
+                                Обязательно вернёмся!”</p>
+                            <div class="review-name">Сергей и Ольга</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cooperation">
+        <div class="container">
+            <h2 class="section-title ">Мы открыты&nbsp;к сотрудничеству</h2>
+            <h3 class="block-title ">Поможем организовать выезд вашей группы</h3>
+            <div class="coop-highlight ">
+                <div class="coop-highlight-text">
+                    <p><strong>Вы: </strong>проводите занятия, ведёте практики, организуете мероприятия — и уже собираете группу.</p>
+                    <p><strong>Мы: </strong>подбираем отели и площадки, организуем трансфер, бронируем билеты и экскурсии, решаем все логистические вопросы.</p>
+                    <p class="result"><strong>Результат: </strong>вы занимаетесь своим делом, мы обеспечиваем комфортный выезд вашей группы.
+                    </p>
+                    <p><strong>Вы: </strong>Управляете гостиницей, транспортной компанией, базой отдыха</p>
+                    <p><strong>Мы: </strong>предлагаем нашим клиентам и партнёрам ваши услуги, когда это подходит под их запросы</p>
+                    <p class="result"><strong>Результат: </strong>вы получаете дополнительный канал продаж, а мы — уверенность в качестве размещения и сервиса.</p>
+                    <button class="btn-primary coop-popup-btn" id="openCoopPopup"><i class="fas fa-handshake"></i> Стать
+                        партнёром</button>
+                </div>
+                <div class="coop-highlight-image">
+                    <img src="./img/partners-photo.jpg" alt="Наши партнёры">
+                </div>
+            </div>
+        </div>
+        <div class="partner-slider ">
+            <div class="partner-track" id="partnerTrack">
+                <!-- Первый набор логотипов -->
+                <div class="partner-item"><img src="./img/partners/anex.png" alt="partner anex"></div>
+                <div class="partner-item"><img src="./img/partners/pegas.png" alt="partner pegas"></div>
+                <div class="partner-item"><img src="./img/partners/biblio-globus.png" alt="partner biblio-globus"></div>
+                <div class="partner-item"><img src="./img/partners/russian-express.png" alt="partner russian-express"></div>
+                <div class="partner-item"><img src="./img/partners/inturist.png" alt="partner inturist"></div>
+                <div class="partner-item"><img src="./img/partners/astoria-grande.png" alt="partner astoria-grande"></div>
+                <div class="partner-item"><img src="./img/partners/delfin.svg" alt="partner delfin"></div>
+                <div class="partner-item"><img src="./img/partners/alean.svg" alt="partner alean"></div>
+                <div class="partner-item"><img src="./img/partners/tez.svg" alt="partner tez tour"></div>
+                <div class="partner-item"><img src="./img/partners/pac.png" alt="partner pac group"></div>
+                <div class="partner-item"><img src="./img/partners/msc.png" alt="partner msc cruise"></div>
+                <div class="partner-item"><img src="./img/partners/coral-travel.png" alt="partner coral-travel"></div>
+                <!-- Дублируем для бесконечности (копия того же набора) -->
+                <div class="partner-item"><img src="./img/partners/anex.png" alt="partner anex"></div>
+                <div class="partner-item"><img src="./img/partners/pegas.png" alt="partner pegas"></div>
+                <div class="partner-item"><img src="./img/partners/biblio-globus.png" alt="partner biblio-globus"></div>
+                <div class="partner-item"><img src="./img/partners/russian-express.png" alt="partner russian-express"></div>
+                <div class="partner-item"><img src="./img/partners/inturist.png" alt="partner inturist"></div>
+                <div class="partner-item"><img src="./img/partners/astoria-grande.png" alt="partner astoria-grande"></div>
+                <div class="partner-item"><img src="./img/partners/delfin.svg" alt="partner delfin"></div>
+                <div class="partner-item"><img src="./img/partners/alean.svg" alt="partner alean"></div>
+                <div class="partner-item"><img src="./img/partners/tez.svg" alt="partner tez tour"></div>
+                <div class="partner-item"><img src="./img/partners/pac.png" alt="partner pac group"></div>
+                <div class="partner-item"><img src="./img/partners/msc.png" alt="partner msc cruise"></div>
+                <div class="partner-item"><img src="./img/partners/coral-travel.png" alt="partner coral-travel"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="map">
+        <div class="container">
+            <h2 class="section-title ">Наши контакты</h2>
+            <div class="contacts-wrapper">
+                <div class="contacts-grid">
+                    <div class="contact-item "><i class="fas fa-phone-alt"></i><a href="tel:+78001234567">+7
+                            (800) 123-45-67</a></div>
+                    <div class="contact-item "><i class="fab fa-telegram"></i><a href="#"
+                            id="telegramContact">@jumbotravel</a></div>
+                    <div class="contact-item "><i class="fab fa-vk"></i><a href="#" id="vkLink">ВКонтакте</a></div>
+                    <div class="contact-item "><i class="fas fa-envelope"></i><a
+                            href="mailto:info@jumbotravel.ru">info@jumbotravel.ru</a></div>
+                    <div class="contact-item "><i class="fas fa-map-marker-alt"></i>
+                        <p>г. Бердянск, ул. Шевченко, 8</p>
+                    </div>
+                    <a href="#questionForm" class="btn-outline question-btn" style="width:100%; max-width: 380px;"><i class="fas fa-comment"></i> Задать вопрос</a>
+                </div>
+                <div class="map-container ">
+                    <img src="./img/yandex-map.png" alt="jumbotravel на карте">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Jumbo Travel</h4>
+                    <p>Путешествия без границ</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4><a href="tel:+78001234567">+7 (800) 123-45-67</a><a
+                        href="mailto:info@jumbotravel.ru">info@jumbotravel.ru</a>
+                    <p>г. Бердянск, ул. Шевченко, 8</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Мы в мессенджерах</h4><a href="#"><i class="fab fa-telegram"></i> Telegram</a>
+                    <a href="#"><i class="fab fa-vk"></i> ВКонтакте</a>
+                </div>
+            </div>
+            <div class="copyright">© 2025 Jumbo Travel — всё для ваших путешествий</div>
+        </div>
+    </footer>
+
+    <div class="popup-overlay" id="universalPopup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+    
+            <!-- Форма "Задать вопрос" -->
+            <div id="popupQuestionForm" class="popup-form-container">
+                <h3>Есть вопрос?</h3>
+                <form id="questionFormPopup">
+                    <div class="form-group"><input type="text" placeholder="Ваше имя*" required></div>
+                    <div class="form-group"><input type="tel" placeholder="Телефон*" required></div>
+                    <div class="form-group"><textarea rows="3" placeholder="Ваш вопрос"></textarea></div>
+                    <button type="submit" class="btn-primary" style="width:100%;">Отправить</button>
+                </form>
+            </div>
+    
+            <!-- Форма "Стать партнёром" -->
+            <div id="popupCoopForm" class="popup-form-container" style="display: none;">
+                <h3>Стать партнёром</h3>
+                <form id="coopFormPopup">
+                    <div class="form-group"><input type="text" placeholder="Имя*" required></div>
+                    <div class="form-group"><input type="tel" placeholder="Телефон*" required></div>
+                    <div class="form-group"><input type="email" placeholder="Email" required></div>
+                    <div class="form-group"><textarea rows="3"
+                            placeholder="Сообщение / направление сотрудничества"></textarea></div>
+                    <button type="submit" class="btn-primary" style="width:100%;">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- <script src="js/gsap-marquee.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/animations.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/telegram.js"></script>
+</body>
+
+</html>
