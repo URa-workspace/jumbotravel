@@ -26,9 +26,9 @@
 /* About Grid */
 .about-grid {
     display: grid;
+    align-items: stretch;
     grid-template-columns: 1fr;
     gap: 40px;
-    align-items: center;
     position: relative;
     z-index: 3;
 }
@@ -79,7 +79,7 @@
 .stats {
     display: flex;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 50px;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
@@ -107,11 +107,15 @@
     color: var(--gold);
 }
 
+.stat-item p {
+    text-align: center;
+     color: var(--gold);
+}
+
 /* About Image */
 .about-image img {
     width: 100%;
     border-radius: 1rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     height: auto;
 }
 
