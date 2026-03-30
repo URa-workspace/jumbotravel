@@ -3,7 +3,7 @@
   "use strict";
 
   // Ссылка на Telegram-канал (замените на реальную)
-  const TELEGRAM_CHANNEL_URL = "https://t.me/jumbotravel_channel";
+  const TELEGRAM_CHANNEL_URL = "https://t.me/jumbo_travel_agency";
 
   // Маппинг услуг на конкретные посты в Telegram
   const serviceLinks = {
